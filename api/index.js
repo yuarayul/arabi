@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI)
   .catch(err => console.error('MongoDB connection error:', err));
 
 // Import routes
-const dictionaryRoutes = require('../routes/dictionary');
+const dictionaryRoutes = require('../../server/routes/dictionary');
 
 // API routes
 app.use('/api/dictionary', dictionaryRoutes);
